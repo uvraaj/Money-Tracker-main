@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Money Tracker</h1>
+        <h2>Add Expense/Income</h2>
+        <form id="expenseForm">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <select id="category">
+                <option value="food">Food</option>
+                <option value="rent">Rent</option>
+                <option value="transport">Transport</option>
+                <option value="shopping">shopping</option>
+                <option value="Loan">loan</option>
+                <!-- Add more categories as needed -->
+            </select>
+            <label for="type">Type:</label>
+            <input type="radio" id="expense" name="type" value="expense" checked>
+            <label for="expense">Expense</label>
+            <input type="radio" id="income" name="type" value="income">
+            <label for="income">Income</label>
+            <button type="submit">Add</button>
+        </form>
+        <h2>Expenses/Income</h2>
+        <div id="expenses"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
